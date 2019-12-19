@@ -1,25 +1,61 @@
-.footer{
-    position:relative;
-    top:100%;
-    transform: translate(0%,-100%);
-    height:300px;
-    background-color:rgba(0,0,0,.7);
-    float: left;
-    width:33%;
-  
-  }
-  h2{
-    position:absolute;top:10%;float: left;left:20%;font-size:48px;
-  }
-  h1,h5{
-    padding: 20px;
-  }
-  body{
-    color:white;font-family:calibri;
-  }
-  #main{
-    width:100%;background-color:darkred;height:600px;clear:both;
-  }
-  img{
-    position:absolute;top:15%;float: left;left:60%;
-  }
+.container
+      {
+          background-color: #e70000;
+          height: 600px;   
+      }
+      .bannerHead
+      {
+        float: left;
+        display: inline-flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+      }
+      .bannerTextDiv
+      {
+        margin: auto;
+        color:#e70000
+      }
+      .bannerLogoDiv
+      {
+        margin: auto;
+      }
+      .heading
+      {
+        color: white;
+        margin: 0;
+        font-size: -webkit-xxx-large;
+      }
+      .subheading
+      {
+        color:white
+      }
+      .logo
+      {
+        float: left;
+      }
+      .BoxView
+      {
+        width: 100%;
+        float: left;
+        display: inline-flex;
+      }
+      .Box
+      {
+        width: 33%;
+        height: 294px;
+        background-color: #571212;
+        margin: auto;
+      }
+      .boxHeading
+      {
+        color:white;
+        padding: 20px;
+        font-weight: 100;
+      }
+      .boxText
+      {
+        color: bisque;
+        padding: 20px;
+        font-size: small;
+      }

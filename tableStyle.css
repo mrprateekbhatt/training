@@ -1,0 +1,19 @@
+table
+      {
+        width:50%;
+        border:solid silver  1px;
+        padding: 0px;
+        margin: auto;
+      }
+      th
+      {
+        text-align: left;
+      }
+      td
+      {
+        height: 30px;
+      }
+      tr:nth-child(2n)
+      {
+        background: grey
+      }

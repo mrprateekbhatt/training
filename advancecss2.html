@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+            *, ::after, ::before 
+            {
+                box-sizing: border-box;
+                margin:0%;
+                padding:0%;
+
+            }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            width: 100%;
+            
+        }
+        .topnv {
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            background: #f6f6f6;
+            padding: 11px;
+            
+        }
+        .nxtnv{
+            
+            font-family: "Roboto", sans-serif; 
+            padding: 0px;
+            position:sticky;
+            top: 0;
+            width:100%;
+            background-color: #fff;
+            z-index: 99;
+        }
+        .sintac{
+            border-radius: 0px; 
+            color: #fff;
+            vertical-align: middle;
+            position:sticky;
+            top: 0;
+            font-size: 30px;
+            
+        }
+        .leftul, .rightul {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+        }
+        .leftul li, .rightul li{
+            display: inline-block
+        }
+        .rightul {
+            margin-left: auto;
+            float:right;
+        }
+        .leftul li {
+            margin-right: 50px;
+        }
+
+        .rightul li {
+            margin-right: 23px;
+        }
+        li{
+            color:#888888;
+        }
+        .nxtnv .rightul li{
+            
+            padding-top: 29px;
+                margin-right: 40px;
+            color: black;
+            font-size: 14px;
+            
+        }
+        .topnv a {
+            text-decoration: none;
+            color: #888888;
+        }
+        .nxtnv a{
+            color: black;
+            text-decoration: none;
+            
+            
+        }
+        
+        .topnv a:visited{
+            color: #888888;
+            text-decoration: none;
+        }
+        .topnv a:hover{
+            color:firebrick;
+        }
+        .nxtnv a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        .nxtnv a:hover{
+            color:firebrick;
+        }
+        .leftul li:last-child {
+            margin-right: 0px;
+        }
+        .fa{
+            padding-right: 8px;
+        }
+        .main
+        {
+            
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+}
+        .poster{
+            height:720px;
+            width: 100%;
+            background-image: url("nightcity.jpeg");
+            position: relative;
+        }
+        .service
+        {
+            border: 1px solid transparent;
+            background: #fff;
+            text-align: center;
+            padding: 40px 30px 25px;
+            transition: all 300ms linear 0s;
+        }
+        
+        .future{
+            font-size: 23px;
+            color: #fff;
+            font-family: "Heebo", sans-serif;
+            
+        }
+        
+        hr{
+        color: white;
+        width: 94px;
+        margin: 0 auto;
+        
+        }
+        .hr2{
+            color: red;
+            width: 105px;
+            height: 4px;
+            margin: -2px 0px 0px 517px;
+            background-color: red;
+        }
+        .make{
+        font-size: 60px;
+        font-family: "Heebo", sans-serif;
+        font-weight: 500;
+        color: white;
+        text-align: -webkit-center;
+        }
+        .we
+        {
+            font-size: 30px;
+            font-weight:700;
+            color: #202e31;
+            font-family: "Heebo", sans-serif;
+            margin-bottom: 22px;
+            line-height: 40px;
+        }
+        .providing
+    {
+        
+            font-size: 30px;
+            font-weight:700;
+            color: #202e31;
+            font-family: "Heebo", sans-serif;
+            margin-bottom: 22px;
+            line-height: 40px;
+            margin-top: 195px;
+    
+    }
+        
+        .void{
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            color: #888888;
+            margin-bottom: 40px;
+            line-height: 26px;
+        }
+        .what
+        {
+            font-size: 30px;
+            font-weight: 700;
+            color: #202e31;
+            font-family: "Heebo", sans-serif;
+            line-height: 40px;
+            text-align: center;
+        }
+        .box
+        {
+            font-size: 16px;
+            font-weight: 700;
+            color: #202e31;
+            font-family: "Heebo", sans-serif;
+            line-height: 40px;
+            text-align: center;
+        }
+
+
+        
+        .together
+        {
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            color: #888888;
+            text-align: center;
+            padding-bottom:100px;
+        }
+        
+        .btn
+        {
+        background: #e22104;
+        padding: 0px 51px;
+        color: #fff;
+        border: 1px solid #e22104;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        transition: all 300ms linear 0s;
+        
+        padding: 16px 52px;
+        }
+        .btn2
+        {
+                background: #e22104;
+                color: #fff;
+                border: 1px solid #e22104;
+                border-radius: 5px;
+            font-family: "Heebo", sans-serif;
+            text-transform: uppercase;
+            transition: all 300ms linear 0s;
+            padding: 17px;
+            margin-left: 3px;
+            margin-top: -37px;
+        }
+        .btn:hover{
+            background-color: white;
+            color:red;
+            transform: scale(1.1s);
+        }
+        .btn2:hover{
+        background-color: white;
+            color:red;
+            transform: scale(1.1s);
+        }
+        .build
+        {
+            
+            height:550px;
+            width: 100%;
+            background-repeat: no-repeat;
+            
+}
+        
+        div.gallery {
+            margin: 2px;
+            float: left;
+            width: 266px;
+                height: 343px;
+            display:block;
+        }
+        .imgul
+        {
+            
+            width:100%;
+        }
+
+        div.gallery:hover {
+            border: 1px solid rgb(248, 4, 4);
+        }
+
+        div.gallery img {
+            width: 43%;
+            height: 100px;;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #888888;
+        }
+        .wallpaper
+        {
+            background-image: url(wallpaper.jpeg);
+            background-position:center;
+            background-repeat: no-repeat;
+            height: 494px;
+            width: 100%;
+
+            background-repeat:no-repeat;
+            margin-top:100px
+        
+        }
+        .builder
+        {
+            background-position:left;
+            background-repeat: no-repeat;
+            height:400px;
+            width: 50%;
+            padding-top:100px;
+            background-repeat:no-repeat;
+            margin-top: 30px;
+            margin-left: 236px;
+            padding-left: 86px;
+        
+        }
+        .footer
+        {
+            background-color: #16191a;
+            height:400px;
+            width: 100%;
+            display: flex;
+        }
+        .footer-nav1 li a {
+            font-size: 14px;
+            color: #888888;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .footer-nav2 li a {
+            font-size: 14px;
+            color: #888888;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .footer-nav1 li{
+            transition: transform 0.5s;
+            font-size: 33px;
+            margin-left: 20px;
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #888888;
+            margin-bottom: 17px;
+
+
+        }
+        .footer-nav2 li{
+            transition: transform 0.5s;
+            font-size: 33px;
+            margin-left: 38px;
+            list-style-type: none;
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #888888;
+            margin-bottom: 17px;
+        
+        }
+        .footer-nav1 li:hover{
+            color: #c71111;
+            transform:scaleX(1.1);
+        
+
+        }
+        .footer-nav1 li:hover{
+            color: #c71111;
+            transform:scaleX(1.1);
+        
+
+        }
+        .foot_h6
+        {
+            color: #fff;
+            padding-bottom: 26px;
+            font-size: 20px;
+            font-weight: 400;
+            border-bottom: 1px solid #333;
+            margin-bottom: 23px;
+            font-family: "Roboto", sans-serif;
+            margin-left: 41px;
+
+        }
+        .footer_hr
+        {
+            width:"100%";
+        }
+    </style>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="navBar">
+        <div class="container">
+            <div class="nxtnv">
+                <div class="container">
+                    <ul class="leftul">
+                            <li class="sintac"><img src="img/head_logo.jpg" /></li>
+                    </ul>
+                    <ul class="rightul">
+                            
+                            <li><a href="#HOME">HOME</a></li>
+                            <li><a href="#ABOUT">ABOUT</a></li>
+                            <li><a href="#SERVICES">SERVICES</a></li>
+                            <li><a href="#PROJECT">Portfolio</a></li>
+                            <li><a href="#BLOG">Price</a></li>
+                            <li><a href="#CONTACT">Blog</a></li>
+                            <li><i class=></i></li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="poster">
+        <div class="main"> 
+            <p class="future middle">FUTURE CONSRUCTION</p>
+            <br><hr><br>
+            <p class="make">Make your dream home <br>with sintac</p><br>
+            <input class="btn" type="submit" name="submit" value="Get a Quote">
+        </div>
+    </div>
+  </body>
+</html>
