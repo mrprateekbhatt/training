@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./style2.css">
+    <style>
+        #popup
+        {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            opacity: .8;
+            position: absolute;
+            top: 0%;
+            display:none;
+        }
+        #cross
+        {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50px;
+            right: 100px;
+
+        }
+        #popupText
+        {
+            margin: 20%;
+            color: white;
+            font-size: -webkit-xxx-large;
+        }   
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#d1").click(function(){
+                $("#d1").css("background-color","red")
+            })
+            $("#d2").click(function(){
+                $("#d2").html("<h1>LeftBar</h1>");
+            }); 
+            $("#d4").click(function(){
+                $("#d3").fadeOut(1000);
+            });
+            $("#d5").click(function(){
+                $("#popup").show();
+            });
+            $("#cross").click(function(){
+                $("#popup").hide();
+            });
+        })
+    </script>
+    <title>CSS basic task 2</title>
+  </head>
+  <body>
+    <div id="d1"><h1>Header</h1><p>Click Me to chnage my color</p></div>
+    <div id="d2"><h1>Sidebar</h1><p>Click me to chang my Text</p></div>
+    <div id="d3"><h1>Main Content</h1></div>
+    <div id="d4" ><h1>Extra Content</h1><p>Click me to fade out main content </p></div>
+    <div id="d5" ><h1>Footer</h1><p>Click me for popup</p></div>
+    <div id="popup">
+        <img id="cross" src="./img/cross.jpeg"/>
+        <h1 id="popupText">I am Popup</h1>
+    </div>
+  </body>
+</html>

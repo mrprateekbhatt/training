@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+        .redBox
+        {
+            margin: auto;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        .body
+        {
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $(".redBox").hide()
+            })
+        })
+    </script>
+  </head>
+  <body class="body">
+    <div class="redBox">
+
+    </div>
+    <p>Hide the red box on button click</p>
+    <button id="button1">Click me</button>
+
+</body>
+</html>

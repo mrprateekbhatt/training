@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+        .body
+        {
+            text-align: center;
+        }
+        #button1
+        {
+            width: 80%;
+        }
+        .panelBox
+        {
+            margin: auto;
+            height: 150px;
+            width: 80%;
+            background-color: bisque;
+            text-align: center;
+            display: none;
+        }
+        .helloWorld
+        {
+            margin: 0;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $(".panelBox").slideDown("slow")
+            })
+        })
+    </script>
+  </head>
+  <body class="body">
+    <button id="button1">Click me to slide down panel</button>
+    <div class="panelBox">
+        <p class="helloWorld">Hello World</p>
+    </div>
+    
+    
+
+</body>
+</html>

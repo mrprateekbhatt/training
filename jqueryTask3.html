@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <style>
+            .comment
+            {
+                color:red;
+                border-style: none;
+            }
+      </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function validate()
+        {
+            var fname = $('#fname').val();
+            var lname = $('#lname').val();
+            {(fname=="")?$('#comment_fname').val("Please Enter First Name"):$('#comment_fname').val("");}
+            {(lname=="")?$('#comment_lname').val("Please Enter Second Name"):$('#comment_lname').val("");}
+        }
+    </script>
+  </head>
+  <body>
+    <form method="post">
+
+    <label for="fname">FirstName</label><br>
+    <input type="text" id="fname"  value=""><br>
+    <input type="text" id="comment_fname" class="comment" value=""><br>
+    <label for="lname">LastName</label><br>
+    <input type="text" id="lname"  value=""/><br>
+    <input type="text" id="comment_lname" class="comment" value=""><br>
+    <input type="button" onclick='validate()' value="Submit">
+  </body>
+</form>
+</html>
